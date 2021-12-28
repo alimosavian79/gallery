@@ -5,9 +5,11 @@ export default function Modal({ show, hideModal, text, title }) {
     <div className={`modal ${show ? "show" : ""}`}>
       <div className="black-outline" onClick={() => hideModal()}></div>
       <div className="modal-body">
-        <h3>{title}</h3>
+        <h3>
+          {title}
+          <i onClick={() => hideModal()} className="fa fa-times"></i>
+        </h3>
         <p>{text}</p>
-        <button onClick={() => hideModal()}>Done!</button>
       </div>
     </div>
   );
