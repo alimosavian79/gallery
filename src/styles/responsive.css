@@ -1,0 +1,13 @@
+@media (max-width: 1199px) and (min-width: 576px) {
+    .image-wrapper{
+        width: calc(50% - 10px);
+    }
+}
+@media (max-width: 575px) {
+    .image-wrapper{
+        width: calc(100% - 10px);
+    }
+    .modal .modal-body{
+        width: 300px;
+    }
+}
